@@ -29,14 +29,11 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       },
     }, {
       popUp: !isIE,
-      consentScopes: [
-        'user.read',
-        'openid',
-        'profile',
-      ],
+      consentScopes: [],
       unprotectedResources: [],
       protectedResourceMap: [
-        ['https://shoestore-products-aspnetcore-azure.azurewebsites.net/', ['access_as_user' ]]
+        ['https://shoestore-products-aspnetcore-azure.azurewebsites.net/products', 
+        ['api://<enter client id here>/access_as_user' ]],
       ],
       extraQueryParameters: {}
     })  
