@@ -11,8 +11,8 @@ export class ProductsListComponent implements OnInit {
   constructor(private repository: ProductRepository) { }
   ngOnInit(): void {
   }
-  getProducts(): Product[] {
-      return this.repository.getProducts();
+  getProducts(): Product[] {    
+    return this.repository.getProducts();
   }
   deleteProduct(id: number) {
       this.repository.deleteProduct(id);

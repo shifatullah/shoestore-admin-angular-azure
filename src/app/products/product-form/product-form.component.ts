@@ -27,6 +27,6 @@ export class ProductFormComponent implements OnInit {
 
     save(form: NgForm) {
         this.repository.saveProduct(this.product);
-        this.router.navigateByUrl("/main/products");
+        this.router.navigateByUrl("/products");
     }
 }

@@ -13,8 +13,10 @@ export class OrdersListComponent implements OnInit {
     ngOnInit(): void {
     }
     getOrders(): Order[] {
-        return this.repository.getOrders()
-            .filter(o => this.includeShipped || !o.shipped);
+      let orders: Order[] = [];
+      return orders;
+      // return this.repository.getOrders()
+      //     .filter(o => this.includeShipped || !o.shipped);
     }
     markShipped(order: Order) {
         order.shipped = true;
