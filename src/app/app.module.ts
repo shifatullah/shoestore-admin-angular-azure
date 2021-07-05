@@ -33,7 +33,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       unprotectedResources: [],
       protectedResourceMap: [
         ['https://shoestore-products-aspnetcore-azure.azurewebsites.net/products', 
-        ['api://<enter client id here>/access_as_user' ]],
+        ['api://<enter products api client id here>/access_as_user' ]],
       ],
       extraQueryParameters: {}
     })  
