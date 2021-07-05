@@ -19,9 +19,9 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     AppRoutingModule,
     MsalModule.forRoot({
       auth: {
-        clientId: '<client id>', // This is your client ID
-        authority: 'https://login.microsoftonline.com/<tenant id>', // This is your tenant ID
-        redirectUri: 'http://localhost:4200'// This is your redirect URI
+        clientId: 'dde03603-a33b-427a-be82-9fe520f568ec', // This is your client ID
+        authority: 'https://login.microsoftonline.com/5956e8fe-c09d-4798-911a-d7d612dcbbb7', // This is your tenant ID
+        redirectUri: 'https://shoestore-admin-angular-azure.azurewebsites.net'// This is your redirect URI
       },
       cache: {
         cacheLocation: 'localStorage',
@@ -33,7 +33,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       unprotectedResources: [],
       protectedResourceMap: [
         ['https://shoestore-products-aspnetcore-azure.azurewebsites.net/products', 
-        ['api://<enter products api client id here>/access_as_user' ]],
+        ['api://aed6c30b-b312-4297-8525-9f0459038bc3/access_as_user' ]],
       ],
       extraQueryParameters: {}
     })  
