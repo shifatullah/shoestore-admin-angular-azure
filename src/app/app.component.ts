@@ -7,7 +7,7 @@ import { filter, takeUntil } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit, OnDestroy {
   title = 'Shoe Store Admin';
@@ -76,15 +76,15 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
-  logout(popup?: boolean) {
-    if (popup) {
-      this.authService.logoutPopup({
-        mainWindowRedirectUri: "/"
-      });
-    } else {
-      this.authService.logoutRedirect();
-    }
-  }
+  // logout(popup?: boolean) {
+  //   if (popup) {
+  //     this.authService.logoutPopup({
+  //       mainWindowRedirectUri: "/"
+  //     });
+  //   } else {
+  //     this.authService.logoutRedirect();
+  //   }
+  // }
 
   ngOnDestroy(): void {
     this._destroying$.next(undefined);

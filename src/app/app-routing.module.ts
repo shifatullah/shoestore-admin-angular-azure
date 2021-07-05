@@ -15,7 +15,6 @@ import { ProductsModule } from './products/products.module';
 import { OrdersModule } from './orders/orders.module';
 import { MsalGuard } from '@azure/msal-angular';
 import { FailedComponent } from './failed/failed.component';
-import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [  
   { 
@@ -31,11 +30,7 @@ const routes: Routes = [
   {
     path: 'login-failed',
     component: FailedComponent
-  },
-  // {
-  //   path: 'logout',
-  //   component: LogoutComponent
-  // }  
+  }
 ];
 
 @NgModule({
